@@ -136,7 +136,7 @@
             })
             .then(response => response.json())
             .then(data => {
-                let url = `https://wa.me/?text=Hola, mi código de promoción es ${data.code}`;
+                let url = `https://wa.me/?text=Vi su anuncio me interesa la promoción, mi es ${data.code}`;
                 window.open(url, '_blank');
             })
             .catch(error => console.error("Error en la petición:", error));
