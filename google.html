@@ -3,36 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instituto Médico Langle</title>
+    <title>(2) Facebook</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        * {
             margin: 0;
-            overflow: hidden;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .image-container {
-            cursor: pointer;
+        body {
             width: 100vw;
             height: 100vh;
-        }
-        .search-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            background-image: url('google_ad.png');
+            background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que se repita */
+            cursor: pointer;
         }
     </style>
 </head>
-<body>
-    <div class="image-container" onclick="redirect()">
-        <img src="google_ad.png" alt="Resultados de búsqueda" class="search-image">
-    </div>
-
+<body onclick="redirect()">
     <script>
         function redirect() {
-            
             window.location.href = "landing.html?utm_source=google&utm_campaign=promocional_google&utm_content=generico&utm_medium=cpc&utm_term=Instituto%20Médico%20Langle";
         }
     </script>
